@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import { useSelector } from "react-redux";
 import { selectTrending } from "../features/movie/movieSlice";
 import React from 'react'
+import { useLocation } from "react-router-dom";
 
 const Trending = () => {
-
+  
   const movies = useSelector(selectTrending);
   console.log(movies, ":🛢️");
   return (
